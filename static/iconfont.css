@@ -13,6 +13,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-liebiao:before {
+  content: "\e601";
+}
+
+.icon-shoucang:before {
+  content: "\e646";
+}
+
+.icon-pengyouquan:before {
+  content: "\e621";
+}
+
+.icon-xiaochengxu:before {
+  content: "\e619";
+}
+
+.icon-wenjianjia:before {
+  content: "\ec17";
+}
+
+.icon-shouji:before {
+  content: "\e8b9";
+}
+
+.icon-lianxiren:before {
+  content: "\e613";
+}
+
+.icon-hudiejie:before {
+  content: "\e629";
+}
+
+.icon-Rrl_s_131:before {
+  content: "\e622";
+}
+
 .icon-yonghu1:before {
   content: "\e788";
 }
