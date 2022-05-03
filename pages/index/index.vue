@@ -4,30 +4,40 @@
 			<view class="left-avatar">
 				<img src="../../static/images/avatar.jpg" alt="">
 			</view>
-			<uni-icons custom-prefix="iconfont" type="icon-wechat_message-copy" :size="28" color="#a2a2a2"></uni-icons>
-			<uni-icons custom-prefix="iconfont" type="icon-lianxiren" :size="28" color="#a2a2a2"></uni-icons>
-			<uni-icons custom-prefix="iconfont" type="icon-shoucang" :size="28" color="#a2a2a2"></uni-icons>
-			<uni-icons custom-prefix="iconfont" type="icon-wenjianjia" :size="28" color="#a2a2a2"></uni-icons>
-			<uni-icons custom-prefix="iconfont" type="icon-pengyouquan" :size="28" color="#a2a2a2"></uni-icons>
-			<uni-icons custom-prefix="iconfont" type="icon-hudiejie" :size="28" color="#a2a2a2"></uni-icons>
+			<uni-icons custom-prefix="iconfont" type="icon-wechat_message-copy" :size="26" color="#a2a2a2"></uni-icons>
+			<uni-icons custom-prefix="iconfont" type="icon-lianxiren" :size="26" color="#a2a2a2"></uni-icons>
+			<uni-icons custom-prefix="iconfont" type="icon-shoucang" :size="26" color="#a2a2a2"></uni-icons>
+			<uni-icons custom-prefix="iconfont" type="icon-wenjianjia" :size="26" color="#a2a2a2"></uni-icons>
+			<uni-icons custom-prefix="iconfont" type="icon-pengyouquan" :size="26" color="#a2a2a2"></uni-icons>
+			<uni-icons custom-prefix="iconfont" type="icon-hudiejie" :size="26" color="#a2a2a2"></uni-icons>
 			<view style="flex-grow: 1;"></view>
-			<uni-icons custom-prefix="iconfont" type="icon-xiaochengxu" :size="28" color="#a2a2a2"></uni-icons>
-			<uni-icons custom-prefix="iconfont" type="icon-shouji" :size="28" color="#a2a2a2"></uni-icons>
-			<uni-icons custom-prefix="iconfont" type="icon-liebiao" :size="28" color="#a2a2a2"></uni-icons>
+			<uni-icons custom-prefix="iconfont" type="icon-xiaochengxu" :size="26" color="#a2a2a2"></uni-icons>
+			<uni-icons custom-prefix="iconfont" type="icon-shouji" :size="26" color="#a2a2a2"></uni-icons>
+			<uni-icons custom-prefix="iconfont" type="icon-liebiao" :size="26" color="#a2a2a2"></uni-icons>
 		</view>
 		<view class="middle">
 			<view class="header">
 				<view class="search-box">
 					<uni-icons class="search-icon" type="search" :size="22"></uni-icons>
-					<input class="search-input" type="text" value="" placeholder="搜索"/>
+					<input class="search-input" type="text" value="" placeholder="搜索" />
 				</view>
-					<uni-icons class="icon-btn-add" type="plusempty" :size="24"></uni-icons>
+				<uni-icons class="icon-btn-add" type="plusempty" :size="24"></uni-icons>
 			</view>
 			<view class="contacts-list">
 				<view class="contacts-box" v-for="(item, inde) in contactsList">
-					<image class="contacts-img" src="../../static/images/avatar.jpg" mode=""></image>
-					<view class="contacts-info"></view>
-					<view class="contacts-time-info"></view>
+					<view class="contacts-img">
+						<image src="../../static/images/avatar.jpg"></image>
+					</view>
+					<view class="contacts-info">
+						<view class="contacts-name">移动app外包群</view>
+						<view class="contacts-content">王志伟：@李春生-php开发工程师 刚才统计一下BUG表：红色：验证不通过</view>
+					</view>
+					<view class="contacts-time-info">
+						<view class="time">14:12</view>
+						<view class="clock">
+							<uni-icons custom-prefix="iconfont" type="icon-guanbishengyin" :size="14" color="#bbbbbb"></uni-icons>
+						</view>
+					</view>
 				</view>
 			</view>
 		</view>
@@ -40,27 +50,27 @@
 		data() {
 			return {
 				contactsList: [{
-					
-				},{
-					
-				},{
-					
-				},{
-					
-				},{
-					
-				},{
-					
-				},{
-					
-				},{
-					
-				},{
-					
-				},{
-					
-				},{
-					
+
+				}, {
+
+				}, {
+
+				}, {
+
+				}, {
+
+				}, {
+
+				}, {
+
+				}, {
+
+				}, {
+
+				}, {
+
+				}, {
+
 				}],
 			}
 		},
@@ -106,10 +116,16 @@
 				}
 			}
 
-			.icon-wechat_message-copy,.icon-lianxiren,.icon-shoucang,.icon-wenjianjia,.icon-pengyouquan,.icon-hudiejie {
+			.icon-wechat_message-copy,
+			.icon-lianxiren,
+			.icon-shoucang,
+			.icon-wenjianjia,
+			.icon-pengyouquan,
+			.icon-hudiejie {
 				margin-top: 20px;
 				cursor: pointer;
 			}
+
 			.icon-wechat_message-copy:hover,
 			.icon-lianxiren:hover,
 			.icon-shoucang:hover,
@@ -121,11 +137,14 @@
 			.icon-liebiao:hover {
 				color: #07c160 !important;
 			}
+
 			.icon-wechat_message-copy {
 				margin-top: 30px;
 			}
-			
-			.icon-xiaochengxu,.icon-shouji,.icon-liebiao {
+
+			.icon-xiaochengxu,
+			.icon-shouji,
+			.icon-liebiao {
 				margin-bottom: 20px;
 				cursor: pointer;
 			}
@@ -134,13 +153,13 @@
 		.middle {
 			width: 312px;
 			border-right: 1px solid #cdcdcd;
-			
+
 			.header {
 				display: flex;
 				margin-top: 32px;
 				align-items: center;
 				padding-bottom: 15px;
-				
+
 				.search-box {
 					display: flex;
 					justify-content: center;
@@ -150,44 +169,96 @@
 					width: 100%;
 					margin-right: 10px;
 					margin: 0 15px;
-					
+
 					.search-icon {
 						margin: 0 2px;
 					}
-					
+
 					.search-input {
 						width: 100%;
 					}
 				}
-				
+
 				.icon-btn-add {
 					background-color: #e2e2e2;
 					padding: 3px;
 					border-radius: 4px;
 					color: #616161 !important;
 					margin-right: 15px;
+					cursor: pointer;
+				}
+
+				.icon-btn-add:hover {
+					background-color: #d1d1d1;
 				}
 			}
-			
+
 			.contacts-list {
 				max-height: 548px;
-				overflow-y:scroll;
-				
+				overflow-y: scroll;
+
 				.contacts-box {
 					height: 80px;
 					display: flex;
-					align-items: center;
-					background-color: #e6e5e5;
-					
+					background-color: #f5f5f5;
+
 					.contacts-img {
-						height: 44px;
-						width: 44px;
-						margin-left: 12px;
+						margin-top: 18px;
+						image {
+							height: 44px;
+							width: 44px;
+							margin: 0 14px 0 16px;
+						}
+					}
+
+					.contacts-info {
+						display: flex;
+						flex-direction: column;
+						width: 100%;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						word-break: break-all;
+						overflow: hidden;
+
+						.contacts-name {
+							margin-top: 16px;
+							font-size: 18px;
+						}
+
+						.contacts-content {
+							font-size: 12px;
+							color: #999999;
+							margin-top: 8px;
+						}
+					}
+
+					.contacts-time-info {
+						display: flex;
+						flex-direction: column;
+						width: 54px;
+						margin: 0 10px;
+						color: #999999;
+						
+						.time {
+							font-size: 14px;
+							margin-top: 18px;
+						}
+						
+						.clock {
+							text-align: right;
+							margin-top: 8px;
+						}
 					}
 				}
+
 				.contacts-box:hover {
-					background-color: #dcdada;
+					background-color: #d8d8d8;
 				}
+			}
+
+			.contacts-list::-webkit-scrollbar {
+				/*隐藏滚轮*/
+				display: none;
 			}
 		}
 
