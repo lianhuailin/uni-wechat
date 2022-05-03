@@ -2,6 +2,9 @@
 
 #### 介绍
 仿微信电脑版，目前只有登录界面，以后慢慢更新。
+![Image text](https://gitee.com/bfinger/uni-wechat/blob/master/static/images/demo/1.png)
+![Image text](https://gitee.com/bfinger/uni-wechat/blob/master/static/images/demo/2.png)
+![Image text](https://gitee.com/bfinger/uni-wechat/blob/master/static/images/demo/3.png)
 
 #### 软件架构
 uniapp开发，clone下来直接运行就可以
